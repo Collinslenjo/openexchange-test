@@ -10,6 +10,7 @@ Note the project uses sqlite3 as the db
 * create and activate a virtualenv and run ```pip install -r requirements.txt```
 * create migrations by running ```./manage.py makemigrations && ./manage.py migrate```
 * proceed to create a user with the command ```./manage.py createsuperuser```
+* you can seed data by running the script ```seed.py```  
 * run the app via ```./manage.py runserver``` and access your app on http://localhost:8000
 
 ### API
