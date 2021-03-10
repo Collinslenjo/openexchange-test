@@ -8,6 +8,11 @@ from api.serializers import CurrencySerializer
 
 
 @api_view(['GET'])
+def home(request):
+    return Response({"success": "00000"})
+
+
+@api_view(['GET'])
 def get_all_currencies(request):
     query_results = Currency.objects.all()
     data = [CurrencySerializer(currency).data for currency in query_results]
